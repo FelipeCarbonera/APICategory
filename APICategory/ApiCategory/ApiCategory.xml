@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiCategory</name>
+    </assembly>
+    <members>
+        <member name="M:ApiCategory.Controllers.CategoryController.Get">
+            <summary>
+            Return all Categories in DB
+            </summary>
+            <remarks>
+                Return Example:
+                [
+                    {
+                        "id": 1,
+                        "name": "name1",
+                        "description": "desc1",
+                        "date": "2020-09-01T17:13:19"
+                    },
+                    {
+                        "id": 2,
+                        "name": "name2",
+                        "description": "desc2",
+                        "date": "2020-09-01T17:13:19"
+                    }
+                ]
+            </remarks>
+            <returns>A List of Categories</returns>
+            <param>No parameters</param>
+        </member>
+        <member name="M:ApiCategory.Controllers.CategoryController.Get(System.Int64)">
+            <summary>
+            Return an especific Category by Id
+            </summary>
+            <remarks>
+                Return Example:
+                {
+                    "id": 1,
+                    "name": "name1",
+                    "description": "desc1",
+                    "date": "2020-09-01T17:13:19"
+                }
+            </remarks>
+            <returns>A Category object</returns>
+            <param name="id">The Id of the Category to search for</param>
+        </member>
+        <member name="M:ApiCategory.Controllers.CategoryController.Post(ApiCategory.Models.Category)">
+            <summary>
+            Insert a new Category
+            </summary>
+            <remarks>
+                Return Example:
+                    true
+            </remarks>
+            <returns>A boolean</returns>
+            <param name="newCat">The Category object to insert</param>
+        </member>
+        <member name="M:ApiCategory.Controllers.CategoryController.Put(ApiCategory.Models.Category)">
+            <summary>
+            Update a Category
+            </summary>
+            <remarks>
+                Return Example:
+                    true
+            </remarks>
+            <returns>A boolean</returns>
+            <param name="newCat">The Category object to update</param>
+        </member>
+        <member name="M:ApiCategory.Controllers.CategoryController.Delete(System.Int64)">
+            <summary>
+            Delete a specific Category by ID
+            </summary>
+            <param name="id">The Id to especific Category to Delete</param>
+        </member>
+    </members>
+</doc>
